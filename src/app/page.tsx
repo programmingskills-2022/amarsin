@@ -1,5 +1,6 @@
 "use client";
 import { useRouter } from "next/navigation";
+import Login from "./components/Login";
 
 export default function Home() {
   const router: any = useRouter();
@@ -10,7 +11,7 @@ export default function Home() {
         darkMode ? "dark" : "light"
       }`}
     >
-      {router.push("/login")}
+      <Login />
     </main>
   );
 }

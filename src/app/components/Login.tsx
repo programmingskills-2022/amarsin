@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
-import LoginHeader from "./components/LoginHeader";
-import LoginForm from "./components/LoginForm";
+import LoginHeader from "../components/LoginHeader";
+import LoginForm from "../components/LoginForm";
 import { useGeneralContext } from "@/contexts/GeneralContext";
 
 export default function Login() {
