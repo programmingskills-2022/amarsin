@@ -7,12 +7,13 @@ import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { ChangeEvent, FormEvent, useState } from "react";
+import { UserIcon, LockClosedIcon, MoonIcon } from "@heroicons/react/outline";
 
-type Props = {
-  color: string;
-};
+// type Props = {
+//   color: string;
+// };
 
-export default function LoginForm({ color }: Props) {
+export default function LoginForm() {
   const [userName, setUserName] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
@@ -60,7 +61,9 @@ export default function LoginForm({ color }: Props) {
           inputName={userName}
           setInputName={setUserName}
           autofocus={true}
-          icon={<User size="15" color={color} />}
+          icon={
+            <UserIcon className="dark:text-white/50 text-slate-600 w-4 h-4" />
+          }
         />
         <Input
           type="password"
@@ -68,7 +71,9 @@ export default function LoginForm({ color }: Props) {
           inputName={password}
           setInputName={setPassword}
           autofocus={false}
-          icon={<Lock size="15" color={color} />}
+          icon={
+            <LockClosedIcon className="dark:text-white/50 text-slate-600 w-4 h-4" />
+          }
         />
       </div>
 

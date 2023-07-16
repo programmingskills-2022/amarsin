@@ -1,6 +1,7 @@
 import "./globals.css";
 import { Metadata } from "next";
 import { DataProvider } from "@/contexts/GeneralContext";
+import MyThemeProvider from "@/general/MyThemeProvider";
 
 export const metadata: Metadata = {
   title: `آمارسین`,
@@ -15,7 +16,9 @@ export default function RootLayout({
   return (
     <html lang="en" className="font-vazir rtl">
       <body>
-        <DataProvider>{children}</DataProvider>
+        <MyThemeProvider>
+          <DataProvider>{children}</DataProvider>
+        </MyThemeProvider>
       </body>
     </html>
   );

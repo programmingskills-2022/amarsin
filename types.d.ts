@@ -1,3 +1,4 @@
+declare module "@heroicons/*";
 type LoginMeta = {
   errorCode: number;
   message: string;
