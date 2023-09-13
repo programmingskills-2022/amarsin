@@ -3,10 +3,13 @@ This Project include Payroll, Warehouse software
 Amarsin is a Web-based project
 
 ## Technologies:
-•	Next.js 13
+•	Next.js 13.4
 •	Typescript
-•	Tailwind
+•	Tailwindcss
 •	Redux
+•	Context
+
+
 
 
 ## Demo Images
